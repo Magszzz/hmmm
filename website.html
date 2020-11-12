@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" async></script>
+
+    <title>WEBSITE</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Header section -->
+      <header>
+        <h1 class="head-text">JAVASCRIPT</h1>
+        <h3 class="secondary-text">A website created by: Vanessa Detita</h3>
+      </header>
+
+      <!-- Main section -->
+      <div class="flex-box">
+        <!-- left side items -->
+        <div class="table-contents">
+          <h2>Table of Contents</h2>
+          <div class="items">
+            <h4>Lesson 1:</h4>
+            <p class="link" id="link1">Introduction to HTML</p>
+          </div>
+
+          <div class="items">
+            <h4>Lesson 2:</h4>
+            <p class="link" id="link2">HTML - Basic Tags</p>
+          </div>
+
+          <div class="items">
+            <h4>Lesson 3:</h4>
+            <p class="link" id="link3">HTML - Elements</p>
+          </div>
+
+          <div class="items">
+            <h4>Lesson 4:</h4>
+            <p class="link" id="link4">HTML - Attributes</p>
+          </div>
+
+          <div class="items">
+            <h4>Lesson 5:</h4>
+            <p class="link" id="link5">HTML - Formatting</p>
+          </div>
+        </div>
+
+        <!-- Right side items -->
+        <div class="main-details">
+
+          <div id="lesson-1">
+          <h3>Lesson 1 Introduction to HTML</h3>
+          <hr class="mg-10" />
+          <div class="paragraph">
+            <p class="text">
+              HTML stands for Hypertext Markup Language, and it is the most
+              widely used language to write Web Pages.
+            </p>
+            <li>
+              Hypertext refers to the way in which Web pages (HTML documents)
+              are linked together. Thus, the link available on a webpage is
+              called Hypertext
+            </li>
+            <li>
+              As its name suggests, HTML is a Markup Language which means you
+              use HTML to simply "mark-up" a text document with tags that tell a
+              Web browser how to structure it to display
+            </li>
+          </div>
+
+          <h5 class="mt-15 bold">BASIC HTML DOCUMENT</h5>
+          <hr />
+          <p class="text">
+            In its simplest form, following is an example of an HTML document
+          </p>
+
+          <div class="boxes">
+            <img src="./img/box1.png" alt="" class="mg-10" />
+            <img src="./img/box2.png" alt="" class="mg-10" />
+          </div>
+
+          <h5 class="mt-15 bold">HTML TAGS</h5>
+          <hr>
+          <p class="text">As told earlier, HTML is a markup language and makes use of various tags to format the content. These tags are enclosed within angle braces < Tag Name>. Except few tags, most of the tags have their corresponding closing tags. For example, < html> has its closing tag</ html> and < body> tag has its closing tag </ body> tag etc. </p>
+
+          <p class="mt-20">Above example of HTML document uses the following tags: </p>
+
+          <div class="boxes">
+            <img src="./img/box3.png" alt="" class="mg-10">
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <td class="medium">Name</td>
+                <td class="medium">Description</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Start Tag</td>
+                <td>tags are usually in pairs of start and end tags. Indicated in the start tag is the type of tag used. Also, attributes  are placed in the start tag. </td>
+              </tr>
+              <tr>
+                <td>Attributes</td>
+                <td>used to provide additional information about the tag and goes in name-value pairs separated by an equal sign = <br>(a) A tag may or may not have attributes. Attributes are separated from one another by spaces. Furthermore, the order of appearance is not important <br>
+                  (b) Values are the assigned property to an attribute. It is limited to 1,024 characters in length and may be case sensitive. Values are usually enclosed in single or double quotes. </td>
+              </tr>
+
+              <tr>
+                <td>Content</td>
+                <td>everything between the start and end tags is the content. The content is the one being formatted by the tags to appear on the Web browser.</td>
+              </tr>
+
+              <tr>
+                <td>End tag </td>
+                <td>used to signify the end of the tag and ultimately, the range of the content of the tag. End tags have a slash / as seen in the preceding examples.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5 class="mt-15 bold">Container and Empty tags </h5>
+          <hr />
+          <p class="text">
+            There are two types of tags namely container and empty.
+          </p>
+          <p class="text">
+            Container tags have the start and end tags together with the content while empty tags stand alone and do not require end tags. 
+          </p>
+          <p class="text">Example of container tags:  < p>This is a paragraph.</ p> </p>
+          <p class="text">Example of empty tags:   < br> </p>
+
+          <h5 class="mt-15 bold">The <!DOCTYPE> Declaration </h5>
+          <hr />
+          <p class="text">
+            The <!DOCTYPE> declaration tag is used by the web browser to understand the version of the HTML used in the document. Current version of HTML is 5 and it makes use of the following declaration: 
+          </p>
+
+          <div class="boxes">
+            <img src="./img/box4.png" alt="" class="mg-10">
+          </div>
+        </div>
+          <!-- lesson 2 -->
+          <div id="lesson-2">
+          <h3>Lesson 2 HTML – Basic TAGS</h3>
+          <hr class="mg-10" />
+          <div class="paragraph">
+            <p class="text">
+              Tags are the basic units or building blocks of a HTML file. Web pages are designed and HTML codes are made up of these
+              tags – they control how the HTML does its structuring, laying out and formatting. Tags are enclosed in angle brackets ( ‘<’
+              and ‘>’ ) and an example of it is <html>.
+              HTML files are divided into two parts: the head and the body. Contents in the head part are enclosed in <head></head>
+              and contents in the body part are enclosed in <body></body>.
+            </p>
+          </div>
+
+          <h5 class="mt-15 bold">What are Body Tags</h5>
+          <hr/>
+          <p class="text">
+            Everything that appears on your Web page may it be the text, the images, the videos, etc. should then be put on the body
+            which is enclosed in < body>< /body>.The < p> tag offers a way to structure your text into different paragraphs. Each
+            paragraph of text should go in between an opening < p> and a closing < /p> tag as shown below in the example:
+          </p>
+
+          <h5 class="mt-15 bold">Heading Tags</h5>
+          <hr/>
+          <p class="text">
+            Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings,
+            which use the elements < h1>, < h2>, < h3>, < h4>, < h5>, and < h6>. While displaying any heading, browser adds one line
+            before and one line after that heading.
+            Example:
+          </p>
+
+        <div class="boxes">
+          <img src="./img/box5.png" alt="" class="mg-10">
+          <img src="./img/box6.png" alt="" class="mg-10">
+        </div>
+
+        <h5 class="mt-15 bold">Paragraph Tags</h5>
+        <hr/>
+        <p class="text">
+          The < p> tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an
+          opening < p> and a closing < /p> tag as shown below in the example:
+        </p>
+
+      <div class="boxes">
+        <img src="./img/box7.png" alt="" class="mg-10">
+        <img src="./img/box8.png" alt="" class="mg-10">
+      </div>
+
+      <h5 class="mt-15 bold">Line Break Tag</h5>
+      <hr/>
+      <p class="text">
+        Whenever you use the < br /> element, anything following it starts from the next line. This tag is an example of an empty
+        element, where you do not need opening and closing tags, as there is nothing to go in between them.
+        <br/>
+        <br/>
+        The <  br /> tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have
+        trouble rendering the line break, while if you miss the forward slash character and just use < br> it is not valid in XHTML.
+
+      <div class="boxes">
+        <img src="./img/box9.png" alt="" class="mg-10">
+        <img src="./img/box10.png" alt="" class="mg-10">
+      </div>
+
+      <h5 class="mt-15 bold">Centering Content</h5>
+      <hr/>
+      <p class="text">You can use < center> tag to put any content in the center of the page or any table cell.</p>
+
+      <div class="boxes">
+        <img src="./img/box11.png" alt="" class="mg-10">
+        <img src="./img/box12.png" alt="" class="mg-10">
+      </div>
+
+      <h5 class="mt-15 bold">Horizontal Lines</h5>
+      <hr/>
+      <p class="text">
+        Horizontal lines are used to visually break-up sections of a document. The < hr> tag creates a line from the current position
+        in the document to the right margin and breaks the line accordingly.
+        <br/>
+        <br/>
+        For example, you may want to give a line between two paragraphs as in the given example below:
+        </p>
+
+      <div class="boxes">
+        <img src="./img/box13.png" alt="" class="mg-10">
+      </div>
+
+      <p class="text">
+        Again < hr /> tag is an example of the empty element, where you do not need opening and closing tags, as there is nothing
+        to go in between them.
+        <br/>
+        <br/>
+        The < hr /> element has a space between the characters hr and the forward slash. If you omit this space, older browsers will
+        have trouble rendering the horizontal line, while if you miss the forward slash character and just use < hr> it is not valid in
+        XHTML
+      </p>
+
+      <div class="boxes">
+        <img src="./img/box14.png" alt="" class="mg-10">
+        <img src="./img/box15.png" alt="" class="mg-10">
+        <img src="./img/box16.png" alt="" class="mg-10">
+        <img src="./img/box17.png" alt="" class="mg-10">
+      </div>
+
+      <h5 class="mt-15 bold">Nonbreaking Spaces</h5>
+      <hr/>
+      <p class="text">
+        Suppose you want to use the phrase "12 Angry Men." Here, you would not want a browser to split the "12, Angry" and "Men"
+        across two lines:
+
+        <h5 align="center" class="mt-15 bold">An example of this technique appears in the movie "12 Angry Men."</h5>
+      </p>
+
+      <div class="boxes">
+        <img src="./img/box18.png" alt="" class="mg-10">
+      </div>
+    </div>
+      <!-- lesson 3 -->
+      <div id="lesson-3">
+          <h3>Lesson 3 HTML – Elements and Lists</h3>
+          <hr class="mg-10" />
+          <div class="paragraph">
+            <p class="text">
+              An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the
+              element name is preceded by a forward slash as shown below with few tags:
+            </p>
+        </div>
+          <div class="boxes">
+            <img src="./img/box19.png" alt="" class="mg-10">
+          </div>
+          
+          <p class="text">
+            So here < p>....< /p> is an HTML element, < h1>...< /h1> is another HTML element. There are some HTML elements which
+            don't need to be closed, such as < img.../>, < hr /> and < br /> elements. These are known as void elements.
+            <br/>
+            <br/>
+            HTML documents consists of a tree of these elements and they specify how HTML documents should be built, and what kind
+            of content should be placed in what part of an HTML document.
+            </p>
+
+            <h5 class="mt-15 bold">Nested HTML Elements</h5>
+            <hr/>
+            <p class="text">
+              It is very much allowed to keep one HTML element inside another HTML element: 
+            </p>
+
+            <div class="boxes">
+              <img src="./img/box20.png" alt="" class="mg-10">
+              <img src="./img/box21.png" alt="" class="mg-10">
+            </div>
+
+            <h5 class="mt-15 bold">Invisible Comments and Background</h5>
+            <hr/>
+            <p class="text">
+              Invisible Comments
+              Aside from white spaces, there are other things your Web browser ignores, these are comments. Since they will not be
+              displayed by the browser, comments can be used to put significant statements and/or remarks that you do not want to be
+              displayed. The comment tag is a container tag that uses <!-- as a starting tag and --> as an ending tag.
+            </p>
+
+            <p class="text">
+              Example:
+              <br/>
+                      <b>< !--This is my comment which will not be displayed on the page.--></b>
+              <br/>
+              <br/>
+              Changing the Background Color of a Page
+              You can change the background color of the page by using the bgcolor attribute
+              <br/>
+              <br/>
+                      <b>< body bgcolor=”value”>…< /body></b>
+            </p>
+
+            <h5 class="mt-15 bold">Lists</h5>
+            <hr/>
+            <p class="text">
+              When you want to present data in an enumerated format, you actually list them, right? In HTML, you can display information 
+              in list formats using the list tags.
+              </p>
+            
+              <h5 class="mt-15 bold">Ordered List</h5>
+              <hr/>
+              <p class="text">
+                The first type of list is the ordered list or more known as the numbered list. This is the type of list where each item is numbered 
+                usually starting at 1 (but can be changed using the start attribute). The ordered list uses the container tag < ol>< /ol>. Each
+                item in this list is specified by the empty tag < li>.
+                The ordered list has different types of numbering and can be specified by keying the specified value for the type attribute:
+                </p>
+
+                <li>1 for regular numbering (1, 2, 3, 4, etc.)</li>
+                <li>a for lowercase alphabet (a, b, c, d, etc.)</li>
+                <li>A for uppercase alphabet (A, B, C, D, etc.)</li>
+                <li>i for lowercase Roman Numeral (i, ii, iii, iv, etc.)</li>
+                <li>I for uppercase Roman Numeral (I, II, III, IV, etc.)</li>
+
+                <table>
+                  <thead>
+                    <tr>
+                      <td class="medium">Attribute Name</td>
+                      <td class="medium">Definition</td>
+                      <td class="medium">Example</td>
+                    </tr>
+                  </thead>
+
+                <tbody>
+                  <tr>
+                    <td>type</td>
+                    <td>Indicates the type of numbering to be used in the list </td>
+                    <td>< ol type=’A’>< /ol></td>
+                  </tr>
+
+                  <tr>
+                    <td>start </td>
+                    <td>Indicates the value or number of the first item in the list</td>
+                    <td>< ol type=’1’ start=’3’>< /ol></td>
+                  </tr>
+
+                  <tr>
+                    <td>The values of these attributes are enclosed in single quotes.</td>
+                  </tr>
+
+                </tbody>
+                </table>
+
+                <div class="boxes">
+                  <img src="./img/box22.png" alt="" class="mg-10">
+                  <img src="./img/box23.png" alt="" class="mg-10">
+                </div>
+
+              <h5 class="mt-15 bold">Unordered List</h5>
+              <hr/>
+              <p class="text">
+                If there’s an ordered or numbered type of list, there is also an unordered type of list. This type of list that enumerates each
+                item is not numbered but rather bulleted and uses the container tag < ul>< /ul>. Like the ordered list, each item in this list is
+                specified by the empty tag < li>.
+                The unordered list has different types of bullet to be used and can be specified by keying the specified value for the type 
+                attribute:
+              </p>
+
+              <li>disc for round bullets, for example < ul type=”disk”></ul></li>
+              <li> circle for circular bullets, for example < ul type=”circle”>< /ul></li>
+              <li>square for square bullets, for example < ul type=”square”></ul></li>
+
+              <div class="boxes">
+                <img src="./img/box24.png" alt="" class="mg-10">
+                <img src="./img/box25.png" alt="" class="mg-10">
+              </div>
+            </div>
+              <!-- lesson 4 -->
+            <div id="lesson-4">
+              <h3>Lesson 4 HTML – Attributes</h3>
+              <hr class="mg-10" />
+              <div class="paragraph">
+              <p class="text">
+                We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of 
+                information.
+              <br/>
+              <br/>
+              An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All 
+              attributes are made up of two parts: a name and a value:
+              </p>
+
+              <li>
+                The name is the property you want to set. For example, the paragraph < p> element in the example carries an 
+                attribute whose name is align, which you can use to indicate the alignment of paragraph on the page.
+              </li>
+              <li>
+                The value is what you want the value of the property to be set and always put within quotations. The below example 
+                shows three possible values of align attribute: left, center and right.
+              </li>
+            </div>
+
+              <p class="text">
+              <br/>
+                Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends
+                lowercase attributes/attribute values in their HTML 4 recommendation.
+              </p>
+
+              <div class="boxes">
+                <img src="./img/box26.png" alt="" class="mg-10">
+                <img src="./img/box27.png" alt="" class="mg-10">
+              </div>
+
+              <h5 class="mt-15 bold">The Core Attributes </h5>
+              <hr/>
+              <p class="text">
+                We have seen few HTML tags and their usage like heading tags < h1>, < h2>, paragraph tag < p> and other tags.The four
+                core attributes that can be used on the majority of HTML elements (although not all) are:
+              </p>
+
+              <li>Id</li>
+              <li>Title</li>
+              <li>Class</li>
+              <li>Style</li>
+
+              <h5 class="mt-15 bold">The id Attributes</h5>
+              <hr/>
+              <p class="text">
+                The id attribute of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary
+                reasons that you might want to use an id attribute on an element:
+              </p>
+
+              <li>If an element carries an id attribute as a unique identifier, it is possible to identify just that element and its content.</li>
+              <li>
+                If you have two elements of the same name within a Web page (or style sheet), you can use the id attribute to 
+                distinguish between elements that have the same name.
+              </li>
+
+              <p class="text">
+                We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph
+                elements as shown below.
+              </p>
+
+              <div class="boxes">
+                <img src="./img/box28.png" alt="" class="mg-10">
+              </div>
+
+              <h5 class="mt-15 bold">The title Attribute</h5>
+              <hr/>
+              <p class="text">
+                The title attribute gives a suggested title for the element. They syntax for the title attribute is similar as explained for id 
+                attribute:
+                The behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when
+                cursor comes over the element or while the element is loading.
+              </p>
+
+              <div class="boxes">
+                <img src="./img/box29.png" alt="" class="mg-10">
+                <img src="./img/box30.png" alt="" class="mg-10">
+              </div>
+
+              <p class="text">
+                Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you used in your code is 
+                coming out as a tooltip of the cursor.
+              </p>
+
+              <h5 class="mt-15 bold">The style Attribute</h5>
+              <hr/>
+              <p class="text">The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element.</p>
+
+              <div class="boxes">
+                <img src="./img/box31.png" alt="" class="mg-10">
+              </div>
+
+              <h5 class="mt-15 bold">Internationalization Attributes</h5>
+              <hr/>
+              <p class="text">There are three internationalization attributes, which are available for most (although not all) XHTML elements.</p>
+
+              <li>dir</li>
+              <li>lang</li>
+              <li>xml:lang</li>
+
+              <h5 class="mt-15 bold">The dir Attribute</h5>
+              <hr/>
+              <p class="text">
+                The dir attribute allows you to indicate to the browser about the direction in which the text should flow. The dir attribute can 
+                take one of two values, as you can see in the table that follows:
+              </p>
+
+              <div class="boxes">
+                <img src="./img/box32.png" alt="" class="mg-10">
+                <img src="./img/box33.png" alt="" class="mg-10">
+                <img src="./img/box34.png" alt="" class="mg-10">
+              </div>
+
+              <p class="text">
+                When dir attribute is used within the tag, it determines how text will be presented within the entire document. When used
+                within another tag, it controls the text's direction for just the content of that tag.
+              </p>
+
+              <h5 class="mt-15 bold">The lang Attribute</h5>
+              <hr/>
+              <p class="text">
+                The lang attribute allows you to indicate the main language used in a document, but this attribute was kept in HTML only for 
+                backwards compatibility with earlier versions of HTML. This attribute has been replaced by the xml:lang attribute in new
+                XHTML documents.
+                The values of the lang attribute are ISO-639 standard two-character language codes. Check HTML Language Codes: ISO 639
+                for a complete list of language codes
+                </p>
+
+                <div class="boxes">
+                  <img src="./img/box35.png" alt="" class="mg-10">
+                  <img src="./img/box36.png" alt="" class="mg-10">
+                </div>
+
+              <h5 class="mt-15 bold">The xml:lang Attribute</h5>
+              <hr/>
+              <p class="text">
+                The xml:lang attribute is the XHTML replacement for the lang attribute. The value of the xml:lang attribute should be an ISO
+                639 country code as mentioned in previous section.
+              </p>
+
+              <h5 class="mt-15 bold">Generics Attribute</h5>
+              <hr/>
+              <p class="text">Here's a table of some other attributes that are readily usable with many of the HTML tags.</p>
+
+              <div class="boxes">
+                <img src="./img/box37.png" alt="" class="mg-10">
+              </div>
+
+              <p class="text">
+                We will see related examples as we will proceed to study other HTML tags. For a complete list of HTML Tags and related 
+                attributes please check reference to HTML Tags List.
+              </p>
+            </div>
+              <!-- lesson 5 -->
+            <div id="lesson-5">
+          <h3>Lesson 5 HTML – Formatting</h3>
+          <hr class="mg-10" />
+          <div class="paragraph">
+          <h5 class="mt-15 bold">Font Styles and Effects</h5>
+          <hr/>
+          <p class="text">
+            Now that you can make chunk of text appear as headings, appear as paragraphs or get enumerated as lists, it’s now time to 
+            move on to providing them with styles and effects.
+            <br/>
+            <br/>
+            Remember that your Web site either provides entertainment and/or information; thus enticing your viewers is one main 
+            concern therefore supplying your content with design is a major boost. But do not exaggerate in doing so. Remember that
+            there is always beauty in simplicity.
+            <br/>
+            <br/>
+            Below anythingelse, let us first take a look at some terms used:
+            </p>
+          </div>
+
+            <li>
+              <b>Typography</b>– appearance and arrangement of the characters that make up your text.
+            </li>
+
+            <li>
+              <b>Typeface</b>– the actual appearance, examples are Times New Roman, Arial, etc.
+            </li>
+
+            <li>
+              <b>Type style</b>e – this is the variations given to the text such as boldface, italic, regular, etc
+            </li>
+
+            <li>
+              <b>Font</b>– combination of typeface and type style.
+            </li>
+
+          <h5 class="mt-15 bold">Specifying Font Styles</h5>
+          <hr/>
+
+          <table>
+            <tbody>
+              <tr>
+                <td>< b>< /b></td>
+                <td>
+                  display the text in <b>boldface</b>
+                </td>
+              </tr>
+
+             <tr>
+               <td>< i>< /i></td>
+               <td>
+                display the text in <i>italics</i>
+               </td>
+             </tr>
+
+             <tr>
+              <td>< u>< /u> </td>
+              <td>
+                display the text in <u>underline</u>
+              </td>
+            </tr>
+
+            <tr>
+              <td>< strike>< /strike></td>
+              <td>
+                display the text in <strike>strikethrough</strike>
+              </td>
+            </tr>
+
+            <tr>
+              <td>< sup>< /sup></td>
+              <td>
+                display the text in <sup>superscript</sup>
+              </td>
+            </tr>
+
+            <tr>
+              <td>< sub>< /sub></td>
+              <td>
+                display the text in <sub>subscript</sub>
+              </td>
+            </tr>
+
+            <tr>
+              <td>< em>< /em></td>
+              <td>
+                display the text in <em>emphasis</em>
+              </td>
+            </tr>
+
+            <tr>
+              <td>< strong>< /strong></td>
+              <td>
+                display the text in <strong>strength</strong>
+              </td>
+            </tr>
+
+            <tr>
+              <td>< big>< /big></td>
+              <td>
+                display the text with an increase in size
+              </td>
+            </tr>
+
+            <tr>
+              <td>< small>< /small> </td>
+              <td>
+                display the text with a decrease in size
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h5 class="mt-15 bold">Specifying Font Face</h5>
+          <hr/>
+          <p class="text">
+            You can specify the text font using the face attribute <face=”value”>. Although you can use any font, it is recommended to
+            use a more readable font such as Arial or any sans-serif characters with straight lines and requires less resolution. You should
+            also keep in mind not to use too many different fonts in your Web page.
+            <br/>
+            <br/>
+            < font face=”Arial” size=”5”>This is font face Arial< /font>< br>
+          </p>
+
+          <h5 class="mt-15 bold">Specifying Font Face</h5>
+          <hr/>
+          <p class="text">You can preformat text by using the Preformat Tag pair< pre>< /pre>.</p>
+          <p align="center">< font face=”Arial” size=”5”>This is font face Arial< /font>< br></p>
+          <p>We will preformat text to list items in columns.</p>
+
+          <p>< pre></p>
+          <table>
+            <tbody>
+            <tr>
+              <td>Word </td>
+              <td>Excel</td>
+              <td>Powerpoint</td>
+            </tr>
+
+            <tr>
+              <td>HTML </td>
+              <td>JavaScript</td>
+              <td>CSS</td>
+            </tr>
+
+            <tr>
+              <td>Python</td>
+              <td>VB.net</td>
+              <td>C++</td>
+            </tr>
+          </tbody>
+          </table>
+          
+          <p>< /pre></p>
+
+          <h5 class="mt-15 bold">Specifying Text Color</h5>
+          <hr/>
+          <p class="text">The container tag <f ont>< /font> is used to alter the typeface, size and color of text.</p>
+          <table>
+          <tbody>
+            <tr>
+              <td>face</td>
+              <td>Indicates the typeface used in the text
+              </td>
+            </tr>
+            <tr>
+              <td>size</td>
+              <td>Indicate the size of the text</td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td>Indicate the color of the text</td>
+            </tr>
+          </tbody>
+          </table>
+
+          <p class="text">
+            If the typeface is not set, the text will be displayed in the default typeface set on the Web browser used to display.
+            Special Characters:
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td>& gt;   for greater than symbol or > </td>
+                <td> & alt;   for less than symbol or <</td>
+                <td> & #47;   for slash or /</td>
+              </tr>
+              <tr>
+                <td> & copy;   for copyright symbol or ©</td>
+                <td> & reg;   for registered sign or ®</td>
+                <td> & amp;   for ampersand or &</td>
+              </tr>
+              <tr>
+                <td> & ndash;   for en dash or - </td>
+                <td> & mdash;   for em dash or - </td>
+                <td> & nbsp;   for non-breaking space</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="text">
+            If you use a word processor, you must be familiar with the ability to make text bold, italicized, or underlined; these are just 
+            three of the ten options available to indicate how text can appear in HTML and XHTML.
+          </p>
+
+        <h5 class="mt-15 bold">Bold Text</h5>
+        <hr/>
+        <p class="text">Anything that appears within < b>...< /b> element, is displayed in bold as shown below:</p>
+        <p class="text" align="center">< p>The following word uses a < b>bold< /b> typeface.< /p>
+
+        <h5 class="mt-15 bold">Italic Text</h5>
+        <hr/>
+        <p class="text">Anything that appears within < i>...< /i> element is displayed in italicized as shown below:</p>
+        <p class="text" align="center">< p>The following word uses a < i>Italicized< /i> typeface.< /p></p>
+
+        <h5 class="mt-15 bold">Underlined Text</h5>
+        <hr/>
+        <p class="text">Anything that appears within < u>...< /u> element, is displayed with underline as shown below:</p>
+        <p class="text" align="center">< p>The following word uses a < u>Underlined< /u> typeface.</ p></p>
+
+        <h5 class="mt-15 bold">Strike Text</h5>
+        <hr/>
+        <p class="text">
+          Anything that appears within < strike>...< /strike> element is displayed with strikethrough, which is a thin line through the text 
+          as shown below:
+          </p>
+          <p class="text" align="center">< p>The following word uses a < strike>Strikethrough< /strike> typeface.< /p></p>
+        
+        <h5 class="mt-15 bold">Monospaced Font</h5>
+        <hr/>
+        <p class="text">
+          The content of a < tt>...< /tt> element is written in monospaced font. Most of the fonts are known as variable-width fonts 
+          because different letters are of different widths (for example, the letter 'm' is wider than the letter 'i'). In a monospaced font, 
+          however, each letter has the same width.
+          </p>
+          <p class="text" align="center">< p>The following word uses a < tt>monospaced< /tt> typeface.< /p></p>
+
+          <h5 class="mt-15 bold">Superscript Text</h5>
+          <hr/>
+          <p class="text">
+            The content of a < sup>...< /sup> element is written in superscript; the font size used is the same size as the characters
+            surrounding it but is displayed half a character's height above the other characters.
+            </p>
+            <p class="text" align="center">< p>The following word uses a < sup>superscript< /sup> typeface.< /p></p>
+          
+          <h5 class="mt-15 bold">Subscript Text</h5>
+          <hr/>
+          <p class="text">
+            The content of a < sub>...</ sub> element is written in subscript; the font size used is the same as the characters surrounding it, 
+            but is displayed half a character's height beneath the other characters.
+            </p>
+            <p class="text" align="center">< p>The following word uses a < sub>subscript< /sub> typeface.< /p></p>
+          
+          <h5 class="mt-15 bold">Inserted Text</h5>
+          <hr/>
+          <p class="text">
+            Anything that appears within < ins>...< /ins> element is displayed as inserted text
+            </p>
+            <p class="text" align="center">< p>I want to drink < del>cola< /del> < ins>wine< /ins>< /p></p>
+
+          <h5 class="mt-15 bold">Deleted Text</h5>
+          <hr/>
+          <p class="text">
+            Anything that appears within < del>...< /del> element, is displayed as deleted text.
+            </p>
+            <p class="text" align="center">< p>I want to drink < del>cola< /del> < ins>wine< /ins>< /p></p>
+
+          <h5 class="mt-15 bold">Larger Text</h5>
+          <hr/>
+          <p class="text">
+            The content of the < big>...< /big> element is displayed one font size larger than the rest of the text surrounding it as shown
+            below:
+            </p>
+            <p class="text" align="center">< p>The following word uses a < big>big</ big> typeface.< /p></p>
+
+          <h5 class="mt-15 bold">Smaller Text</h5>
+          <hr/>
+          <p class="text">
+            The content of the < small>...< /small> element is displayed one font size smaller than the rest of the text surrounding it as
+            shown below:
+              </p>
+              <p class="text" align="center">< p>The following word uses a < small>small< /small> typeface.< /p></p>
+
+          <h5 class="mt-15 bold">Grouping Content</h5>
+          <hr/>
+          <p class="text">
+            The < div> and < span> elements allow you to group together several elements to create sections or subsections of a page.
+            For example, you might want to put all of the footnotes on a page within a < div> element to indicate that all of the elements
+            within that < div> element relate to the footnotes. You might then attach a style to this < div> element so that they appear
+            using a special set of style rules.
+            </p>
+          
+            <div class="boxes">
+              <img src="./img/box38.png" alt="" class="mg-10">
+              <img src="./img/box39.png" alt="" class="mg-10">
+              <img src="./img/box40.png" alt="" class="mg-10">
+              <img src="./img/box41png" alt="" class="mg-10">
+              <img src="./img/box42.png" alt="" class="mg-10">
+            </div>
+
+          <h5 class="mt-15 bold">Images or Graphics</h5>
+          <hr/>
+          <p class="text">
+            You can add image to your Web page with the use of < img> tag. The < img> tag supports several attributes, but the scr=
+            attribute is the one that specifies the name and location of the image.
+            You can create an image from Adobe Photoshop, MS Paint or any image-editing programs. You should save your image in
+            a JPEG format and compress the image so that loading time will be fast. You can reduce image size by saving your file for
+            the web. You can also use GIF format for logos and other images that include text and graphics.
+            Attribute Table for < img>
+            </p>
+
+            <div class="boxes">
+              <img src="./img/box43.png" alt="" class="mg-10">
+            </div>
+          
+            <p class="text">HTML supports various image formats or file type namely:</p>
+            <li>
+              Joint Photographic Experts Group or JPEG (or JPG) – Supports a million of colors and has the file name extension of
+              either jpeg or jpg. This file format is commonly used.
+            </li>
+            <li>
+              Compuserve Graphics Interchange Format or GIF – Supports up to 256 colors and has the file name extension of gif.
+              This file format is commonly used and can be animated.
+            </li>
+            <li>Portable Network Graphics or PNG – Supports a million of colors and has the file name extension of png.</li>
+            <li>
+              Bitmap or BMP – Supports a million of colors and has the file name extension of bmp. This type of image is not
+              compressed that’s why it provides the best quality for image at the cost of file size
+            </li>
+
+            <div class="boxes">
+              <img src="./img/box44.png" alt="" class="mg-10">
+              <img src="./img/box45.png" alt="" class="mg-10">
+            </div>
+
+          <h5 class="mt-15 bold">Using Graphics as Hyperlink</h5>
+          <hr/>
+          <p class="text">Before you can use graphic as hyperlink you have to create the image first in Photoshop, Paint or other programs.</p>
+
+          <div class="boxes">
+            <img src="./img/box46.png" alt="" class="mg-10">
+            <img src="./img/box47.png" alt="" class="mg-10">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
